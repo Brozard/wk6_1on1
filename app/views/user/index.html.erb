@@ -1,0 +1,19 @@
+<% @users.each do |user| %>
+  <div class="border">
+    
+    <div class="div-row padding">
+      <%= image_tag(user.picture, size: "100x100") %><br/>
+      <div class="padding">
+        <%= user.name %><br/>
+        <%= user.bio %>
+      </div>
+    </div>
+    <hr/>
+    <div class="div-row padding">
+      <div class="margin">Comments: <%= user.comments.count %></div>
+      <div class="margin">Followers: <%= user.followers.count %></div>
+      <div class="margin"><%= button_to "Follow", action: 'index' %></div>
+    </div>
+  </div>
+  <br/>
+<% end %>

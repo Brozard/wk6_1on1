@@ -1,0 +1,25 @@
+// Place all the styles related to the User controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.div-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.div-btwn {
+  display: flex;
+  flex-direction: center;
+}
+
+.border {
+  border: solid 2px blue;
+  width: 25em;
+}
+
+.padding {
+  padding: 0.5em;
+}
+
+.margin {
+  margin: auto;
+}
